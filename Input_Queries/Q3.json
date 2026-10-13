@@ -1,0 +1,9 @@
+{
+  "id": "arrayDimensionFilterNotProjected",
+  "name": "Query with an array dimension, a scalar metric and a filter on a non-projected but linked array dimension",
+  "metrics": [
+    { "alias": "sum_mtm", "expression": "sum(mtm)" }
+  ],
+  "groupBy": ["legType", "legCurrency"],
+  "filter": { "op": "in", "dimension": "legId", "values": ["leg212"] }
+}

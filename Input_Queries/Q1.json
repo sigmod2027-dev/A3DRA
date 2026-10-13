@@ -1,0 +1,9 @@
+{
+  "id": "arrayDimension",
+  "name": "Simple query with an array dimension, a scalar metric and a filter on the array dimension",
+  "metrics": [
+    { "alias": "sum_mtm", "expression": "sum(mtm)" }
+  ],
+  "groupBy": ["book", "legType"],
+  "filter": { "op": "in", "dimension": "legType", "values": ["call"] }
+}

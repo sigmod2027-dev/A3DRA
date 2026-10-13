@@ -1,0 +1,10 @@
+{
+  "id": "arrayDimensionOfFact",
+  "name": "Query with a dimension, an array and another array dimension from another group, and a metric of array and a scalar metric",
+  "metrics": [
+    { "alias": "sum_mtm", "expression": "sum(mtm)" },
+    { "alias": "sum_legNotional", "expression": "sum(legNotional)" }
+  ],
+  "groupBy": ["book", "legalEntity", "legType"],
+  "filter": null
+}

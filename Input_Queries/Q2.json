@@ -1,0 +1,9 @@
+{
+  "id": "arrayDimensionFilter",
+  "name": "Simple query with a simple dimension, a scalar metric and a filter on the array dimension handle a filter on a dimensional array which is not in by when not transposing any other array",
+  "metrics": [
+    { "alias": "sum_mtm", "expression": "sum(mtm)" }
+  ],
+  "groupBy": ["book"],
+  "filter": { "op": "in", "dimension": "legType", "values": ["call"] }
+}

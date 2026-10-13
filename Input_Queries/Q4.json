@@ -1,0 +1,15 @@
+{
+  "id": "arrayDimensionFilterOnBothArrayNotProjected",
+  "name": "Query with dimension, a scalar metric and a filter on two arrays dimension",
+  "metrics": [
+    { "alias": "sum_mtm", "expression": "sum(mtm)" }
+  ],
+  "groupBy": ["book"],
+  "filter": {
+    "op": "and",
+    "operands": [
+      { "op": "in", "dimension": "legCurrency", "values": ["USD"] },
+      { "op": "in", "dimension": "legId", "values": ["leg6"] }
+    ]
+  }
+}

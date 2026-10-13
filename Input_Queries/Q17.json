@@ -1,0 +1,9 @@
+{
+  "id": "arrayDimensionFilterOnScalarDimension",
+  "name": "Query with a dimension, an array, a metric and a filter on a dimension",
+  "metrics": [
+    { "alias": "sum_mtm", "expression": "sum(mtm)" }
+  ],
+  "groupBy": ["book", "legType"],
+  "filter": { "op": "in", "dimension": "book", "values": ["book9"] }
+}

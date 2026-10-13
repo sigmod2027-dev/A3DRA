@@ -1,0 +1,15 @@
+{
+  "id": "twoArraydimensionGroup",
+  "name": "Query with a dimension, an array and another array dimension from another group, a metric and a filter on group",
+  "metrics": [
+    { "alias": "sum_mtm", "expression": "sum(mtm)" }
+  ],
+  "groupBy": ["book", "legalEntity", "legType"],
+  "filter": {
+    "op": "and",
+    "operands": [
+      { "op": "in", "dimension": "legType", "values": ["put"] },
+      { "op": "in", "dimension": "legalEntity", "values": ["FR"] }
+    ]
+  }
+}

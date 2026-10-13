@@ -1,0 +1,13 @@
+{
+  "id": "arrayDimensionOfFactFiltered",
+  "name": "Query with a dimension, an array and, and a metric of array filtered",
+  "metrics": [
+    { "alias": "sum_legNotional", "expression": "sum(legNotional)" }
+  ],
+  "groupBy": ["book", "legType"],
+  "filter": {
+    "op": "range",
+    "dimension": "sum_legNotional",
+    "interval": { "lower": 200000000000, "lowerInclusive": false, "upper": 300000000000, "upperInclusive": false }
+  }
+}

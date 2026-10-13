@@ -1,0 +1,10 @@
+{
+  "id": "arrayDimensionComplexeMetric",
+  "name": "Query with a dimension, an array and, and a metric that are not optimizable and that have plus inside and outside",
+  "metrics": [
+    { "alias": "avg_legNotional", "expression": "avg(legNotional + 3) + 2" },
+    { "alias": "avg_mtm", "expression": "avg(mtm + 3) + 2" }
+  ],
+  "groupBy": ["book", "legType"],
+  "filter": null
+}

@@ -1,0 +1,15 @@
+{
+  "id": "filterGroupOnArrayDimensionAndArrayDimension",
+  "name": "Query with a dimension and a filter on group based array dimension and a filter on array dimension linked to the source of the group",
+  "metrics": [
+    { "alias": "sum_mtm", "expression": "sum(mtm)" }
+  ],
+  "groupBy": ["book"],
+  "filter": {
+    "op": "and",
+    "operands": [
+      { "op": "in", "dimension": "legCurrency", "values": ["GBP"] },
+      { "op": "in", "dimension": "legTypeNiGroup", "values": ["options_related"] }
+    ]
+  }
+}

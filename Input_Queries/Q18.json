@@ -1,0 +1,10 @@
+{
+  "id": "arrayDimensionZipMetricZipLabel",
+  "name": "Query with array dimension, zip array metric and a zip label",
+  "metrics": [
+    { "alias": "sum_mtf", "expression": "sum(mtf)" },
+    { "alias": "sum_legNotional", "expression": "sum(legNotional)" }
+  ],
+  "groupBy": ["legType", "datePlots"],
+  "filter": { "op": "in", "dimension": "datePlots", "values": ["2021-11-04"] }
+}

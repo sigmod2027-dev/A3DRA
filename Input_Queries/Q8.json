@@ -1,0 +1,10 @@
+{
+  "id": "groupOnArrayDimensionFilterOnArray",
+  "name": "Query with a dimension, a group based on an array, a metric and a filter on the base array of the group",
+  "metrics": [
+    { "alias": "sum_mtm", "expression": "sum(mtm)" },
+    { "alias": "sum_notional", "expression": "sum(notional)" }
+  ],
+  "groupBy": ["book", "legalEntityGroup"],
+  "filter": { "op": "in", "dimension": "legalEntity", "values": ["FR"] }
+}

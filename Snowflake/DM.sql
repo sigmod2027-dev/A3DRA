@@ -1,0 +1,26 @@
+CREATE OR REPLACE TABLE tradeFactTable (
+    Date DATE,
+    csaDictionary BIGINT,
+    tradeDate DATE,
+    tradeId STRING,
+    book STRING,
+    counterparty STRING,
+    csaId STRING,
+    productType STRING,
+    mtfScenario STRING,
+    notional FLOAT,
+    mtm FLOAT,
+    riskFactorSpots ARRAY,
+    deltaSpots ARRAY,
+    mtf ARRAY,
+    legalEntities ARRAY,
+    legIds ARRAY,
+    legCurrencies ARRAY,
+    legTypes ARRAY,
+    legNotionals ARRAY,
+    commit BIGINT,
+    factor TINYINT,
+    nb_aggregated BIGINT,
+    stream_id BIGINT
+);
+

@@ -1,0 +1,9 @@
+{
+  "id": "nonInjectiveGroupOnArrayDimensionFilterOnArray",
+  "name": "Query with a dimension, a group non injectif based on an array, a metric and a filter on the group",
+  "metrics": [
+    { "alias": "sum_mtm", "expression": "sum(mtm)" }
+  ],
+  "groupBy": ["book", "legalEntityContinentNiGroup"],
+  "filter": { "op": "in", "dimension": "legalEntityContinentNiGroup", "values": ["EU"] }
+}
